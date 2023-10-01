@@ -1,7 +1,30 @@
 @charset "UTF-8";
 
-@media (max-width: 800px) {
+@media (max-width: 840px) {
+	h1 {
+		font-size: 1.8rem;
+	}
+	
     .container {
+		max-width: 600px;
 		width: 100%;
     }
+
+	.feature-title {
+		font-size: 2.4rem;
+		width: 365px;
+	}
+
+	.footer-grid {
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+		grid-template-rows: repeat(2, minmax(0, 1fr));
+	}
+
+	.feature-grid {
+		display: grid;
+		grid-template-columns: repeat(1, minmax(0, 1fr));
+		grid-template-rows: repeat(2, minmax(0, 1fr));
+		width: 280px;
+		margin: auto;
+	}
 }
