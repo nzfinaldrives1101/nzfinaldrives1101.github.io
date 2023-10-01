@@ -201,20 +201,19 @@ section {
 }
 
 .faq {
-	height: 86px;
 	overflow: hidden;
-}
-
-.faq-header {
-	height: 86px;
-	display: flex;
-	padding: 1rem;
-	cursor: pointer;
+	background-color: #ffffff00;
 	transition: background-color 0.05s ease-out;
 }
 
-.faq-header:hover {
-	background-color: #484848;
+.faq:hover {
+	background-color: #ffffff28;
+}
+
+.faq-header {
+	display: flex;
+	padding: 1rem;
+	cursor: pointer;
 }
 
 .faq-header-text {
@@ -231,15 +230,11 @@ section {
 	filter: invert();
 }
 
-.extended {
-	min-height: 64px;
-	height: auto;
-}
-
 .faq-body {
-	padding-left: 1rem;
-	padding-right: 1rem;
-	margin-bottom: 2rem;
+	height: 0px;
+	transition: height 0.07s ease-out;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
 	color: #d0d0d0;
 }
 
@@ -261,9 +256,11 @@ section {
 
 .contact-link {
 	display: flex;
-	margin-bottom: 0.5rem;
+	margin-bottom: 0.25rem;
 	cursor: pointer;
 	background-color: #ffffff00;
+	user-select: none;
+	border-radius: 0.5rem;
 	transition: background-color 0.05s ease-out;
 }
 

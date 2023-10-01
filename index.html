@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Portfolio website for Calvin Hogg, digital media bachelor graduate with a passion for 3D animation.">
         <link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/modal.css">
         <link rel="stylesheet" href="styles/display.css">
-        <link rel="stylesheet" href="styles/modal.css">
 		<link rel="icon" type="image/x-icon" href="assets/favicon.png">
     </head>
     <body>
@@ -49,22 +49,29 @@
 					Click here to find your final drive. If it’s not listed contact us.
 				</p>
 				<h1>Frequently asked questions</h1>
-				<div class="faq">
+				<div id="f1a" class="faq" onclick="toggle1()">
 					<div class="faq-header">
 						<h3 class="faq-header-text">I have broken one drive, should I buy one or two?</h3>
 						<img class="faq-header-icon" src="assets/images/index/caret.svg"/>
 					</div>
+					<p id="f1b" class="faq-body">
+						There really is no wrong or right answer here. We would recommend you buy two for the reasons set out below in the next section.
+						<br><br>
+						(Typically, about half of our customers buy just the one, with the other half buying two. Of the customers that buy just the one, some come back and buy a second in 3-12 months)
+						<br><br>
+					</p>
 				</div>
 				<div class="faq-divider"></div>
-				<div class="faq">
+				<div id="f2a" class="faq" onclick="toggle2()">
 					<div class="faq-header">
 						<h3 class="faq-header-text">What are the advantages and disadvantages of buying one versus two?</h3>
 						<img class="faq-header-icon" src="assets/images/index/caret.svg"/>
 					</div>
-					<p class="faq-body">
+					<p id="f2b" class="faq-body">
 						There really is no wrong or right answer here. We would recommend you buy two for the reasons set out below in the next section.
 						<br><br>
 						(Typically, about half of our customers buy just the one, with the other half buying two. Of the customers that buy just the one, some come back and buy a second in 3-12 months)
+						<br><br>
 					</p>
 				</div>
 				<div class="faq-divider"></div>
@@ -84,7 +91,7 @@
 				<div class="faq-divider"></div>
 				<div class="faq">
 					<div class="faq-header">
-						<h3 class="faq-header-text">Is it cheaper to rebuild a drive or buy a new one from you?</h3>
+						<h3 class="faq-header-text">Is it cheaper to rebuild a drive or buy a new one from you? Is it cheaper to rebuild a drive or buy a new one from you?Is it cheaper to rebuild a drive or buy a new one from you?</h3>
 						<img class="faq-header-icon" src="assets/images/index/caret.svg"/>
 					</div>
 				</div>
@@ -117,21 +124,21 @@
 				<div>
 					<h2>Contact us</h2>
 					<div class="divider"></div>
-					<a class="contact-link">
+					<a class="contact-link" href="tel:+64272013452">
 						<img class="contact-icon" src="assets/images/index/phone.svg"/>
 						<div style="margin-top: auto; margin-bottom: auto;">
 							<p class="contact-text">Sales</p>
 							<p class="contact-subtext">Carol - 027 201 3452</p>
 						</div>
 					</a>
-					<a class="contact-link">
+					<a class="contact-link" href="tel:+64276116053">
 						<img class="contact-icon" src="assets/images/index/phone.svg"/>
 						<div style="margin-top: auto; margin-bottom: auto;">
 							<p class="contact-text">Technical advice</p>
 							<p class="contact-subtext">Jeremy - 027 611 6053</p>
 						</div>
 					</a>
-					<a class="contact-link">
+					<a class="contact-link" href="mailto:nzfinaldrives@gmail.com">
 						<img class="contact-icon" src="assets/images/index/email.svg"/>
 						<div style="margin-top: auto; margin-bottom: auto;">
 							<p class="contact-text">General enquiries</p>
