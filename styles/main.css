@@ -160,6 +160,7 @@ img {
 	font-size: 3rem;
 	font-family: var(--semibold);
 	margin-bottom: 2rem;
+	line-height: 1.3;
 }
 
 .feature-button {
@@ -227,7 +228,7 @@ img {
 .faq-header-text {
 	margin-top: auto;
 	margin-bottom: auto;
-	margin-right: 1rem;
+	margin-right: 2rem;
 	transition: color 0.07s ease-out;
 }
 
