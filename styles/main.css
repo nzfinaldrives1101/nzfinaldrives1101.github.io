@@ -34,6 +34,7 @@ html {
     text-decoration: none;
 	font-size: 16px;
 	font-family: var(--regular);
+	font-weight: normal;
 	color: #ffffff;
 	outline-style: none;
 	border-style: none;
@@ -58,6 +59,7 @@ h1 {
 
 h2 {
 	font-size: 1.5rem;
+	font-family: var(--semibold);
 	margin-top: 0;
 	margin-bottom: 0;
 }
@@ -226,6 +228,8 @@ img {
 }
 
 .faq-header-text {
+	font-size: 1.1rem;
+	font-family: var(--semibold);
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-right: 2rem;
