@@ -63,7 +63,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	margin-top: 0;
 	margin-bottom: 0;
 }
@@ -91,6 +91,11 @@ img {
     background: #ffffff30;
 }
 
+::placeholder {
+	opacity: 1;
+	color: #ffffff80;
+}
+
 .divider {
 	width: 100%;
 	height: 1px;
@@ -106,8 +111,10 @@ img {
 }
 
 .divider3 {
-	width: 100%;
+	width: auto;
 	height: 1px;
+	margin-left: 12px;
+	margin-right: 12px;
 	background-color: #ffffff30;
 }
 
@@ -118,21 +125,13 @@ img {
 	display: flex;
 	flex-direction: column;
 	height: 700px;
-}
-
-.feature-image {
-	width: 100%;
-	height: 700px;
-	filter: blur(8px);
-	position: absolute;
-	background-size: cover;
-	background-repeat: no-repeat;
 	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 	background-attachment: fixed;
 }
 
 .feature-noise {
-	z-index: 10;
 	width: 100%;
 	height: 700px;
 	position: absolute;
@@ -163,17 +162,9 @@ img {
 	margin-bottom: 2rem;
 }
 
-.feature-grid {
-	display: grid;
-	grid-template-columns: repeat(2, minmax(0, 1fr));
-	gap: 20px;
-	width: 500px;
-	margin: auto;
-}
-
 .feature-button {
 	display: flex;
-	width: 100%;
+	width: 250px;
 	height: 4rem;
 	margin: auto;
 	border-style: solid;
@@ -197,10 +188,10 @@ img {
 
 .feature-gradient {
 	position: absolute;
-	margin-top: 520px;
+	margin-top: 450px;
 	z-index: 100;
 	width: 100%;
-	height: 200px;
+	height: 250px;
 	pointer-events: none;
 	background: linear-gradient(to bottom, #18181800, #181818ff);
 }
@@ -209,7 +200,7 @@ img {
 /* ---------- Content ---------- */
 
 #content {
-	padding-top: 3rem;
+	padding-top: 1rem;
 	padding-bottom: 7rem;
 }
 
@@ -219,20 +210,25 @@ img {
 	transition: background-color 0.05s ease-out;
 }
 
-.faq:hover {
-	background-color: #ffffff28;
-}
-
 .faq-header {
 	display: flex;
 	padding: 1rem;
 	cursor: pointer;
 }
 
+.faq-header:hover > .faq-header-icon {
+	filter: brightness(1);
+}
+
+.faq-header:hover > .faq-header-text {
+	color: #eeab4c;
+}
+
 .faq-header-text {
 	margin-top: auto;
 	margin-bottom: auto;
 	margin-right: 1rem;
+	transition: color 0.07s ease-out;
 }
 
 .faq-header-icon {
@@ -240,7 +236,8 @@ img {
 	margin-right: 0px;
 	width: 2rem;
 	height: 2rem;
-	filter: invert();
+	filter: brightness(3.5);
+	transition: filter 0.07s ease-out;
 }
 
 .faq-body {
@@ -248,7 +245,7 @@ img {
 	transition: height 0.07s ease-out;
 	padding-left: 2.5rem;
 	padding-right: 2.5rem;
-	color: #d0d0d0;
+	color: #ffffffb0;
 }
 
 

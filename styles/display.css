@@ -19,14 +19,6 @@
 		grid-template-columns: repeat(1, minmax(0, 1fr));
 		grid-template-rows: repeat(2, minmax(0, 1fr));
 	}
-
-	.feature-grid {
-		display: grid;
-		grid-template-columns: repeat(1, minmax(0, 1fr));
-		grid-template-rows: repeat(2, minmax(0, 1fr));
-		width: 280px;
-		margin: auto;
-	}
 }
 
 
