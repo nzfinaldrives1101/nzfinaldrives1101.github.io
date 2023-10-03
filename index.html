@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <title>NZ Final Drives</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="New Zealand's leading company for aftermarket final drives at competitive prices.">
@@ -10,14 +11,14 @@
         <link rel="stylesheet" href="styles/display.css">
 		<link rel="icon" type="image/x-icon" href="assets/favicon.png">
     </head>
-    <body>
+    <body onload="resetProductModal()">
 
 		<section id="feature" style="background-image: url('assets/images/index/feature.webp')">
 			<div class="feature-noise" style="background-image: url('assets/images/index/noise.png');"></div>
 			<img class="logo" src="assets/images/index/logo.svg" alt="NZ Final Drives"/>
 			<div class="feature-content">
 				<p class="feature-title">Aftermarket drives at great prices</p>
-				<div class="feature-button" data-bs-toggle="modal" data-bs-target="#modal-Products" >
+				<div class="feature-button" onclick="openModal()" data-bs-toggle="modal" data-bs-target="#modal-Products" >
 					<p class="feature-button-text">Explore our range</p>
 				</div>
 			</div>
@@ -32,7 +33,7 @@
 					<br><br>
 					By keeping our overheads to a minimum and leveraging off our international partners, we're able to generate more sales, resulting in greater savings for our customers. We only sell brand-new final drives, which come included with a 2-year unlimited-hour warranty.
 					<br><br>
-					And if that wasn't enough, our drives are carefully packed and couriered all across New Zealand, with free delivery to the Wellington region.
+					And if that wasn't enough, our drives are carefully packed and couriered all across New Zealand, with free delivery to the Wellington region, and optional pickup from Johnsonville.
 				</p>
 				<h1>Frequently asked questions</h1>
 				<div class="faq">
@@ -207,83 +208,85 @@
 				<div class="modal-section">
 					<p class="modal-title">Explore our range</p>
 					<p class="modal-header">Filter by manufacturer</p>
-					<div class="modal-dropdown">
-						<p class="modal-dropdown-text">Caterpillar</p>
-					</div>
+					<select name="manufacturer" id="manufacturer" onchange="manufacturerSelected(this.value);">
+						<option value="all">- - - All manufacturers - - -</option>
+						<option value="airman">Airman</option>
+						<option value="bobcat">Bobcat</option>
+						<option value="case">Case</option>
+						<!-- <option value="caterpillar">Caterpillar</option>
+						<option value="daewoo">Daewoo</option>
+						<option value="doosan">Doosan</option>
+						<option value="hitachi">Hitachi</option>
+						<option value="newholland">New Holland</option>
+						<option value="ihi">Ihi</option>
+						<option value="kobelco">Kobelco</option>
+						<option value="komatsu">Komatsu</option>
+						<option value="kubota">Kubota</option>
+						<option value="wackerneuson">Wacker Neuson</option>
+						<option value="hyundai">Hyundai</option>
+						<option value="sunward">Sunward</option>
+						<option value="takeuchi">Takeuchi</option>
+						<option value="volvo">Volvo</option>
+						<option value="yanmar">Yanmar</option>
+						<option value="sumitomo">Sumitomo</option> -->
+					</select>
 					<div style="display: flex;">
 						<p class="modal-header">508 products found</p>
-						<input class="modal-search" type="text" id="Search" name="Search" placeholder="Search for a part">
+						<input id="search" type="text" name="Search" placeholder="Search model number" onkeyup="search()">
 					</div>
-					<div class="modal-results">
-						<div class="result">
-							<img class="result-image" src="assets/images/parts/313D2L.webp"/>
-							<div class="result-text">
-								<p class="result-manufacturer">Caterpillar</p>
-								<p class="result-model">313D2L</p>
-								<p class="result-cost">$7,400</p>
+					<ul id="results">
+						<li class="result">
+							<div>
+								<p class="result-manufacturer">Airman</p>
+								<p class="result-model">AX40</p>
 							</div>
-						</div>
-						<div class="divider3"></div>
-						<div class="result">
-							<img class="result-image" src="assets/images/parts/313D2L.webp"/>
-							<div class="result-text">
-								<p class="result-manufacturer">Caterpillar</p>
-								<p class="result-model">313D2L</p>
-								<p class="result-cost">$7,400</p>
+							<p class="result-cost">$3,200</p>
+						</li>
+						<li class="result">
+							<div>
+								<p class="result-manufacturer">Airman</p>
+								<p class="result-model">AX35</p>
 							</div>
-						</div>
-						<div class="divider3"></div>
-						<div class="result">
-							<img class="result-image" src="assets/images/parts/313D2L.webp"/>
-							<div class="result-text">
-								<p class="result-manufacturer">Caterpillar</p>
-								<p class="result-model">313D2L</p>
-								<p class="result-cost">$7,400</p>
+							<p class="result-cost">$2,950</p>
+						</li>
+						<li class="result">
+							<div>
+								<p class="result-manufacturer">Bobcat</p>
+								<p class="result-model">E85</p>
 							</div>
-						</div>
-						<div class="divider3"></div>
-						<div class="result">
-							<img class="result-image" src="assets/images/parts/313D2L.webp"/>
-							<div class="result-text">
-								<p class="result-manufacturer">Caterpillar</p>
-								<p class="result-model">313D2L</p>
-								<p class="result-cost">$7,400</p>
+							<p class="result-cost">$4,400</p>
+						</li>
+						<li class="result">
+							<div>
+								<p class="result-manufacturer">Bobcat</p>
+								<p class="result-model">E80</p>
 							</div>
-						</div>
-						<div class="divider3"></div>
-						<div class="result">
-							<img class="result-image" src="assets/images/parts/313D2L.webp"/>
-							<div class="result-text">
+							<p class="result-cost">$4,400</p>
+						</li>
+						<li class="result">
+							<div>
 								<p class="result-manufacturer">Caterpillar</p>
-								<p class="result-model">313D2L</p>
-								<p class="result-cost">$7,400</p>
+								<p class="result-model">CX80</p>
 							</div>
-						</div>
-						<div class="divider3"></div>
-						<div class="result">
-							<img class="result-image" src="assets/images/parts/313D2L.webp"/>
-							<div class="result-text">
+							<p class="result-cost">$4,500</p>
+						</li>
+						<li class="result">
+							<div>
 								<p class="result-manufacturer">Caterpillar</p>
-								<p class="result-model">313D2L</p>
-								<p class="result-cost">$7,400</p>
+								<p class="result-model">CX75SR</p>
 							</div>
-						</div>
-						<div class="divider3"></div>
-						<div class="result">
-							<img class="result-image" src="assets/images/parts/313D2L.webp"/>
-							<div class="result-text">
-								<p class="result-manufacturer">Caterpillar</p>
-								<p class="result-model">313D2L</p>
-								<p class="result-cost">$7,400</p>
-							</div>
-						</div>
-					</div>
+							<p class="result-cost">$4,400</p>
+						</li>
+
+					</ul>
+					<p class="modal-message">Can't find what you're looking for? Give us a call and let's sort something out.
                 </div>
             </div>
         </div>
 
 		<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script> -->
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
 		<script src="scripts/main.js"></script>
 
     </body>

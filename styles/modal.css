@@ -30,7 +30,7 @@
 
 .modal {
 	overflow-x: scroll;
-	transition: opacity 0.3s;
+	transition: opacity 0.25s;
 	background-color: #080808d0;
 	position: fixed;
 	top: 0;
@@ -47,7 +47,7 @@
 .modal-dialog {
 	width: 600px;
 	height: 100%;
-	min-height: 475px;
+	min-height: 400px;
 	max-height: 700px;
 	opacity: 0;
 	position: relative;
@@ -57,8 +57,18 @@
 	margin-top: calc(50vh - 350px);
 	margin-left: calc(50vw - 300px);
 	transform: scale(1.3);
-	transition: all 0.3s, margin 0s, width 0s, height 0s, padding 0s;
+	transition: all 0.25s, margin 0s, width 0s, height 0s, padding 0s;
 	transition-timing-function: linear;
+}
+
+
+
+
+
+.modal-close {
+	width: 100%;
+	height: 2rem;
+	background-color: #202020;
 }
 
 .modal-title {
@@ -70,43 +80,49 @@
 .modal-header {
     font-family: var(--semibold);
 	color: #ffffffa0;
-	margin-bottom: 0.5rem;
 	height: 40px;
 	line-height: 40px;
 }
 
-.modal-dropdown {
+select {
 	background-color: #202020;
+	color: #eeab4c;
 	padding: 0.5rem;
 	margin-bottom: 2rem;
 	border-radius: 0.5rem;
+	cursor: pointer;
 }
 
-.modal-dropdown-text {
-	color: #ffffff80;
-}
-
-.modal-search {
+#search {
 	background-color: #202020;
-	width: 180px;
-	height: 30px;
-	margin-top: 5px;
+	color: #eeab4c;
+	width: 220px;
+	height: 40px;
+	margin-bottom: 4px;
 	margin-left: auto;
 	font-size: 15px;
-	padding-left: 0.5rem;
-	border-radius: 0.5rem;
+	padding-left: 8px;
+	padding-right: 8px;
+	border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.modal-results {
+#results {
 	background-color: #202020;
 	overflow-y: scroll;
-	border-radius: 0.5rem;
+	height: 100%;
+	border-radius: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.modal-message {
+	font-size: 15px;
+	margin-top: 1rem;
+	color: #ffffffa0;
 }
 
 .result {
-	padding: 12px;
 	display: flex;
-	height: 94px;
+	padding: 12px;
+	overflow: hidden;
 }
 
 .result-image {
@@ -123,11 +139,12 @@
 
 .result-manufacturer {
 	color: #ffffffa0;
-	line-height: 1.2;
+	line-height: 1.3;
 }
 
 .result-model {
 	font-size: 1.3rem;
+	line-height: 1.3;
 	font-family: var(--semibold);
 }
 
@@ -135,6 +152,7 @@
 	display: flex;
 	margin-left: auto;
 	margin-top: auto;
+	margin-bottom: auto;
 }
 
 
@@ -142,14 +160,14 @@
 .modal-section {
 	width: 800px;
 	height: 100%;
-	min-height: 475px;
+	min-height: 400px;
 	max-height: 700px;
 	background-color: #303030;
 	padding: 1rem;
 	border-radius: 0.67rem;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #484848;
 	display: flex;
 	flex-direction: column;
-	border-top: var(--border-modal);
-	border-bottom: var(--border-modal);
-	border-left: var(--border-modal);
 }
