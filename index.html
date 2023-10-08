@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <title>NZ Final Drives</title>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="New Zealand's leading company for aftermarket final drives at competitive prices.">
@@ -18,8 +17,8 @@
 			<img class="logo" src="assets/images/index/logo.svg" alt="NZ Final Drives"/>
 			<div class="feature-content">
 				<p class="feature-title">Aftermarket drives at great prices</p>
-				<div class="feature-button" onclick="openModal()" data-bs-toggle="modal" data-bs-target="#modal-Products" >
-					<p class="feature-button-text">Explore our range</p>
+				<div class="modalopen1" data-bs-toggle="modal" data-bs-target="#modal-Products" >
+					<p class="modalopen-text">Explore our range</p>
 				</div>
 			</div>
 			<div class="feature-gradient"></div>
@@ -28,109 +27,15 @@
 		<section id="content">
 			<div class="container">
 				<h1 style="margin-top: 3rem;">About us</h1>
-				<p style="color: #ffffffb0;">
+				<p style="color: #ffffffb0; margin-bottom: 3rem;">
 					NZ Final Drives provides New Zealanders with affordable high quality after-market final drives. We're proud to be partnered with AUS Final Drives, who have been doing business in Australia since 2015.
 					<br><br>
 					By keeping our overheads to a minimum and leveraging off our international partners, we're able to generate more sales, resulting in greater savings for our customers. We only sell brand-new final drives, which come included with a 2-year unlimited-hour warranty.
 					<br><br>
 					And if that wasn't enough, our drives are carefully packed and couriered all across New Zealand, with free delivery to the Wellington region, and optional pickup from Johnsonville.
 				</p>
-				<h1>Frequently asked questions</h1>
-				<div class="faq">
-					<div class="faq-header" onclick="toggle1()">
-						<p class="faq-header-text">I have broken one drive, should I buy one or two?</p>
-						<img class="faq-header-icon" src="assets/images/index/caret.svg" alt=""/>
-					</div>
-					<p id="f1" class="faq-body">
-						There really is no wrong or right answer here. We would recommend you buy two for the reasons set out below in the next section.
-						<br><br>
-						(Typically, about half of our customers buy just the one, with the other half buying two. Of the customers that buy just the one, some come back and buy a second in 3-12 months)
-						<br><br>
-					</p>
-				</div>
-				<div class="faq">
-					<div class="faq-header" onclick="toggle2()">
-						<p class="faq-header-text">What are the advantages and disadvantages of buying one versus two?</p>
-						<img class="faq-header-icon" src="assets/images/index/caret.svg" alt=""/>
-					</div>
-					<p id="f2" class="faq-body">
-						There really is no wrong or right answer here. We would recommend you buy two for the reasons set out below in the next section.
-						<br><br>
-						(Typically, about half of our customers buy just the one, with the other half buying two. Of the customers that buy just the one, some come back and buy a second in 3-12 months)
-						<br><br>
-					</p>
-				</div>
-				<div class="faq">
-					<div class="faq-header" onclick="toggle3()">
-						<p class="faq-header-text">Will my machine track in a straight line if I only buy one drive?</p>
-						<img class="faq-header-icon" src="assets/images/index/caret.svg" alt=""/>
-					</div>
-					<p id="f3" class="faq-body">
-						There really is no wrong or right answer here. We would recommend you buy two for the reasons set out below in the next section.
-						<br><br>
-						(Typically, about half of our customers buy just the one, with the other half buying two. Of the customers that buy just the one, some come back and buy a second in 3-12 months)
-						<br><br>
-					</p>
-				</div>
-				<div class="faq">
-					<div class="faq-header" onclick="toggle4()">
-						<p class="faq-header-text">Will connecting the hoses incorrectly damage the drive?</p>
-						<img class="faq-header-icon" src="assets/images/index/caret.svg" alt=""/>
-					</div>
-					<p id="f4" class="faq-body">
-						There really is no wrong or right answer here. We would recommend you buy two for the reasons set out below in the next section.
-						<br><br>
-						(Typically, about half of our customers buy just the one, with the other half buying two. Of the customers that buy just the one, some come back and buy a second in 3-12 months)
-						<br><br>
-					</p>
-				</div>
-				<div class="faq">
-					<div class="faq-header" onclick="toggle5()">
-						<p class="faq-header-text">Is it cheaper to rebuild a drive or buy a new one from you?</p>
-						<img class="faq-header-icon" src="assets/images/index/caret.svg" alt=""/>
-					</div>
-					<p id="f5" class="faq-body">
-						There really is no wrong or right answer here. We would recommend you buy two for the reasons set out below in the next section.
-						<br><br>
-						(Typically, about half of our customers buy just the one, with the other half buying two. Of the customers that buy just the one, some come back and buy a second in 3-12 months)
-						<br><br>
-					</p>
-				</div>
-				<div class="faq">
-					<div class="faq-header" onclick="toggle6()">
-						<p class="faq-header-text">What oil does the drive take and how often should I replace it?</p>
-						<img class="faq-header-icon" src="assets/images/index/caret.svg" alt=""/>
-					</div>
-					<p id="f6" class="faq-body">
-						There really is no wrong or right answer here. We would recommend you buy two for the reasons set out below in the next section.
-						<br><br>
-						(Typically, about half of our customers buy just the one, with the other half buying two. Of the customers that buy just the one, some come back and buy a second in 3-12 months)
-						<br><br>
-					</p>
-				</div>
-				<div class="faq">
-					<div class="faq-header" onclick="toggle7()">
-						<p class="faq-header-text">Why are your drives cheaper than your competitors?</p>
-						<img class="faq-header-icon" src="assets/images/index/caret.svg" alt=""/>
-					</div>
-					<p id="f7" class="faq-body">
-						There really is no wrong or right answer here. We would recommend you buy two for the reasons set out below in the next section.
-						<br><br>
-						(Typically, about half of our customers buy just the one, with the other half buying two. Of the customers that buy just the one, some come back and buy a second in 3-12 months)
-						<br><br>
-					</p>
-				</div>
-				<div class="faq">
-					<div class="faq-header" onclick="toggle8()">
-						<p class="faq-header-text">What is the typical freight cost for one of your drives?</p>
-						<img class="faq-header-icon" src="assets/images/index/caret.svg" alt=""/>
-					</div>
-					<p id="f8" class="faq-body">
-						There really is no wrong or right answer here. We would recommend you buy two for the reasons set out below in the next section.
-						<br><br>
-						(Typically, about half of our customers buy just the one, with the other half buying two. Of the customers that buy just the one, some come back and buy a second in 3-12 months)
-						<br><br>
-					</p>
+				<div class="modalopen2" onclick="openModal()" data-bs-toggle="modal" data-bs-target="#modal-FAQ" >
+					<p class="modalopen-text">Read FAQ</p>
 				</div>
 			</div>
 		</section>
@@ -208,85 +113,426 @@
 				<div class="modal-section">
 					<p class="modal-title">Explore our range</p>
 					<p class="modal-header">Filter by manufacturer</p>
-					<select name="manufacturer" id="manufacturer" onchange="manufacturerSelected(this.value);">
+					<select name="manufacturer" id="manufacturer" onchange="selectManufacturer(this.value);">
 						<option value="all">- - - All manufacturers - - -</option>
 						<option value="airman">Airman</option>
 						<option value="bobcat">Bobcat</option>
 						<option value="case">Case</option>
-						<!-- <option value="caterpillar">Caterpillar</option>
+						<option value="caterpillar">Caterpillar</option>
 						<option value="daewoo">Daewoo</option>
 						<option value="doosan">Doosan</option>
 						<option value="hitachi">Hitachi</option>
-						<option value="newholland">New Holland</option>
+						<option value="hyundai">Hyundai</option>
 						<option value="ihi">Ihi</option>
 						<option value="kobelco">Kobelco</option>
 						<option value="komatsu">Komatsu</option>
-						<option value="kubota">Kubota</option>
-						<option value="wackerneuson">Wacker Neuson</option>
-						<option value="hyundai">Hyundai</option>
+						<!-- <option value="kubota">Kubota</option>
+						<option value="newholland">New Holland</option>
+						<option value="sumitomo">Sumitomo</option>
 						<option value="sunward">Sunward</option>
 						<option value="takeuchi">Takeuchi</option>
 						<option value="volvo">Volvo</option>
-						<option value="yanmar">Yanmar</option>
-						<option value="sumitomo">Sumitomo</option> -->
+						<option value="wackerneuson">Wacker Neuson</option>
+						<option value="yanmar">Yanmar</option> -->
 					</select>
 					<div style="display: flex;">
-						<p class="modal-header">508 products found</p>
-						<input id="search" type="text" name="Search" placeholder="Search model number" onkeyup="search()">
+						<input id="search" type="text" name="Search" placeholder="Search model number" >
 					</div>
-					<ul id="results">
-						<li class="result">
-							<div>
-								<p class="result-manufacturer">Airman</p>
-								<p class="result-model">AX40</p>
-							</div>
-							<p class="result-cost">$3,200</p>
-						</li>
-						<li class="result">
-							<div>
-								<p class="result-manufacturer">Airman</p>
-								<p class="result-model">AX35</p>
-							</div>
-							<p class="result-cost">$2,950</p>
-						</li>
-						<li class="result">
-							<div>
-								<p class="result-manufacturer">Bobcat</p>
-								<p class="result-model">E85</p>
-							</div>
-							<p class="result-cost">$4,400</p>
-						</li>
-						<li class="result">
-							<div>
-								<p class="result-manufacturer">Bobcat</p>
-								<p class="result-model">E80</p>
-							</div>
-							<p class="result-cost">$4,400</p>
-						</li>
-						<li class="result">
-							<div>
-								<p class="result-manufacturer">Caterpillar</p>
-								<p class="result-model">CX80</p>
-							</div>
-							<p class="result-cost">$4,500</p>
-						</li>
-						<li class="result">
-							<div>
-								<p class="result-manufacturer">Caterpillar</p>
-								<p class="result-model">CX75SR</p>
-							</div>
-							<p class="result-cost">$4,400</p>
-						</li>
+					<div id="results">
+						<ul class="manufacturer" id="airman">
+							<p class='result'>Airman AX08<br>$2,650</p>
+							<p class='result'>Airman AX12<br>$2,750</p>
+							<p class='result'>Airman AX15<br>$2,820</p>
+							<p class='result'>Airman AX16<br>$2,820</p>
+							<p class='result'>Airman AX17<br>$2,820</p>
+							<p class='result'>Airman AX18<br>$2,920</p>
+							<p class='result'>Airman AX22<br>$2,950</p>
+							<p class='result'>Airman AX25<br>$2,990</p>
+							<p class='result'>Airman AX27<br>$2,820</p>
+							<p class='result'>Airman AX29<br>$2,850</p>
+							<p class='result'>Airman AX30<br>$2,850</p>
+							<p class='result'>Airman AX33<br>$2,920</p>
+							<p class='result'>Airman AX35<br>$2,950</p>
+							<p class='result'>Airman AX40<br>$3,200</p>
+						</ul>
+						<ul class="manufacturer" id="bobcat">
+							<p class='result'>Bobcat 319<br>$2,650</p>
+							<p class='result'>Bobcat 320<br>$2,850</p>
+							<p class='result'>Bobcat 321<br>$2,850</p>
+							<p class='result'>Bobcat 322<br>$2,850</p>
+							<p class='result'>Bobcat 323<br>$2,850</p>
+							<p class='result'>Bobcat 324<br>$2,950</p>
+							<p class='result'>Bobcat 325, 325C<br>$2,950</p>
+							<p class='result'>Bobcat 325D, 325G<br>$3,200</p>
+							<p class='result'>Bobcat 328<br>$3,200</p>
+							<p class='result'>Bobcat 329<br>$3,300</p>
+							<p class='result'>Bobcat 331<br>$3,250</p>
+							<p class='result'>Bobcat 334<br>$3,300</p>
+							<p class='result'>Bobcat 425<br>$3,400</p>
+							<p class='result'>Bobcat 428<br>$3,300</p>
+							<p class='result'>Bobcat 435<br>$3,800</p>
+							<p class='result'>Bobcat E16<br>$2,950</p>
+							<p class='result'>Bobcat E17<br>$2,950</p>
+							<p class='result'>Bobcat E19<br>$2,950</p>
+							<p class='result'>Bobcat E20<br>$2,950</p>
+							<p class='result'>Bobcat E80<br>$4,400</p>
+							<p class='result'>Bobcat E85<br>$4,400</p>
+						</ul>
+						<ul class="manufacturer" id="case">
+							<p class='result'>Case C28<br>$3,050</p>
+							<p class='result'>Case C31 MAXI<br>$3,050</p>
+							<p class='result'>Case CK13<br>$2,880</p>
+							<p class='result'>Case CK25<br>$2,880</p>
+							<p class='result'>Case CK28<br>$3,050</p>
+							<p class='result'>Case CK36<br>$3,400</p>
+							<p class='result'>Case CK38<br>$3,400</p>
+							<p class='result'>Case CK50<br>$3,800</p>
+							<p class='result'>Case CK52<br>$3,700</p>
+							<p class='result'>Case CX130D<br>$8,500</p>
+							<p class='result'>Case CX135SR<br>$8,500</p>
+							<p class='result'>Case CX14<br>$2,750</p>
+							<p class='result'>Case CX15, CX15B<br>$2,880</p>
+							<p class='result'>Case CX16, CX16B<br>$3,020</p>
+							<p class='result'>Case CX160B<br>$8,800</p>
+							<p class='result'>Case CX17, CX17B, CX17C<br>$2,900</p>
+							<p class='result'>Case CX18, CX18B, CX18C<br>$2,880</p>
+							<p class='result'>Case CX210<br>$9,790</p>
+							<p class='result'>Case CX22, CX22B<br>$2,880</p>
+							<p class='result'>Case CX23<br>$2,880</p>
+							<p class='result'>Case CX25<br>$3,050</p>
+							<p class='result'>Case CX26B<br>$3,020</p>
+							<p class='result'>Case CX27B<br>$3,100</p>
+							<p class='result'>Case CX28<br>$3,050</p>
+							<p class='result'>Case CX290<br>$14,500</p>
+							<p class='result'>Case CX300<br>$14,500</p>
+							<p class='result'>Case CX30B<br>$3,100</p>
+							<p class='result'>Case CX31, CX31B<br>$3,300</p>
+							<p class='result'>Case CX330<br>$14,500</p>
+							<p class='result'>Case CX35, CX35B<br>$3,350</p>
+							<p class='result'>Case CX350<br>$14,500</p>
+							<p class='result'>Case CX36, CX36B<br>$3,500</p>
+							<p class='result'>Case CX47<br>$3,400</p>
+							<p class='result'>Case CX50B<br>$3,800</p>
+							<p class='result'>Case CX55B<br>$4,200</p>
+							<p class='result'>Case CX75SR<br>$4,400</p>
+							<p class='result'>Case CX80<br>$4,500</p>
+						</ul>
+						<ul class="manufacturer" id="caterpillar">
+							<p class='result'>Caterpillar 301.5<br>$2,950</p>
+							<p class='result'>Caterpillar 301.6<br>$3,100</p>
+							<p class='result'>Caterpillar 301.6C<br>$3,100</p>
+							<p class='result'>Caterpillar 301.8<br>$3,100</p>
+							<p class='result'>Caterpillar 301.8C<br>$3,100</p>
+							<p class='result'>Caterpillar 302.5<br>$2,990</p>
+							<p class='result'>Caterpillar 302.5C<br>$2,960</p>
+							<p class='result'>Caterpillar 303 CR<br>$2,990</p>
+							<p class='result'>Caterpillar 303.5<br>$3,400</p>
+							<p class='result'>Caterpillar 303.5C, 303.5CCR<br>$3,200</p>
+							<p class='result'>Caterpillar 303.5D, 303.5E, 303.5ECR, 303.5DCR, 303.5DR<br>$3,300</p>
+							<p class='result'>Caterpillar 304.5<br>$3,850</p>
+							<p class='result'>Caterpillar 304CCR<br>$3,800</p>
+							<p class='result'>Caterpillar 304DCR<br>$2,950</p>
+							<p class='result'>Caterpillar 304E, 304ECR<br>$2,950</p>
+							<p class='result'>Caterpillar 305.5E<br>$4,100</p>
+							<p class='result'>Caterpillar 305CCR<br>$3,800</p>
+							<p class='result'>Caterpillar 305CR<br>$3,600</p>
+							<p class='result'>Caterpillar 305E2CR<br>$4,150</p>
+							<p class='result'>Caterpillar 305ECR<br>$4,200</p>
+							<p class='result'>Caterpillar 306<br>$3,600</p>
+							<p class='result'>Caterpillar 307<br>$4,600</p>
+							<p class='result'>Caterpillar 308<br>$4,900</p>
+							<p class='result'>Caterpillar 311C<br>$7,400</p>
+							<p class='result'>Caterpillar 311DLRR<br>$7,300</p>
+							<p class='result'>Caterpillar 311FLRR<br>$7,300</p>
+							<p class='result'>Caterpillar 312<br>$5,700</p>
+							<p class='result'>Caterpillar 312B<br>$5,800</p>
+							<p class='result'>Caterpillar 312BL<br>$5,900</p>
+							<p class='result'>Caterpillar 312C<br>$7,500</p>
+							<p class='result'>Caterpillar 312CL<br>$5,700</p>
+							<p class='result'>Caterpillar 312D<br>$7,400</p>
+							<p class='result'>Caterpillar 312D2<br>$7,400</p>
+							<p class='result'>Caterpillar 312D2GC<br>$7,400</p>
+							<p class='result'>Caterpillar 312DL<br>$7,400</p>
+							<p class='result'>Caterpillar 312E<br>$7,400</p>
+							<p class='result'>Caterpillar 312EL<br>$7,400</p>
+							<p class='result'>Caterpillar 312F<br>$7,400</p>
+							<p class='result'>Caterpillar 312L<br>$5,700</p>
+							<p class='result'>Caterpillar 313D<br>$7,400</p>
+							<p class='result'>Caterpillar 313D2<br>$7,400</p>
+							<p class='result'>Caterpillar 313D2GC<br>$7,400</p>
+							<p class='result'>Caterpillar 313D2L<br>$7,400</p>
+							<p class='result'>Caterpillar 313FL<br>$7,400</p>
+							<p class='result'>Caterpillar 313FLGC<br>$7,400</p>
+							<p class='result'>Caterpillar 314DCR<br>$7,450</p>
+							<p class='result'>Caterpillar 314DLCR<br>$7,450</p>
+							<p class='result'>Caterpillar 314ECR<br>$7,450</p>
+							<p class='result'>Caterpillar 314ELCR<br>$7,450</p>
+							<p class='result'>Caterpillar 314FCR<br>$7,450</p>
+						</ul>
+						<ul class="manufacturer" id="daewoo">
+							<p class='result'>Daewoo DH130<br>$6,500</p>
+							<p class='result'>Daewoo Solar 015<br>$2,820</p>
+							<p class='result'>Daewoo Solar 018<br>$2,820</p>
+							<p class='result'>Daewoo Solar 030<br>$2,950</p>
+							<p class='result'>Daewoo Solar 035<br>$3,400</p>
+							<p class='result'>Daewoo Solar 130<br>$7,900</p>
+							<p class='result'>Daewoo Solar 140<br>$7,900</p>
+							<p class='result'>Daewoo Solar 220<br>$8,900</p>
+							<p class='result'>Daewoo Solar 255<br>$8,900</p>
+							<p class='result'>Daewoo Solar 280<br>$14,500</p>
+							<p class='result'>Daewoo Solar 300<br>$14,500</p>
+							<p class='result'>Daewoo Solar 330<br>$14,660</p>
+							<p class='result'>Daewoo Solar 340<br>$14,900</p>
+							<p class='result'>Daewoo Solar 55<br>$3,750</p>
+							<p class='result'>Daewoo Solar 70<br>$4,500</p>
+							<p class='result'>Daewoo Solar 75<br>$4,500</p>
+						</ul>
+						<ul class="manufacturer" id="doosan">
+							<p class='result'>Doosan DH220<br>$8,600</p>
+							<p class='result'>Doosan DX140<br>$7,900</p>
+							<p class='result'>Doosan DX15<br>$2,820</p>
+							<p class='result'>Doosan DX18<br>$2,820</p>
+							<p class='result'>Doosan DX180<br>$8,600</p>
+							<p class='result'>Doosan DX19<br>$2,820</p>
+							<p class='result'>Doosan DX225<br>$8,500</p>
+							<p class='result'>Doosan DX235<br>$8,600</p>
+							<p class='result'>Doosan DX255<br>$8,600</p>
+							<p class='result'>Doosan DX27<br>$2,950</p>
+							<p class='result'>Doosan DX300<br>$14,500</p>
+							<p class='result'>Doosan DX340<br>$14,700</p>
+							<p class='result'>Doosan DX55<br>$3,750</p>
+							<p class='result'>Doosan DX75<br>$4,500</p>
+							<p class='result'>Doosan DX80<br>$4,500</p>
+						</ul>
+						<ul class="manufacturer" id="hitachi">
+							<p class='result'>Hitachi EX12<br>$2,880</p>
+							<p class='result'>Hitachi EX15<br>$2,820</p>
+							<p class='result'>Hitachi EX150<br>$9,980</p>
+							<p class='result'>Hitachi EX16<br>$2,880</p>
+							<p class='result'>Hitachi EX17<br>$2,880</p>
+							<p class='result'>Hitachi EX18<br>$2,880</p>
+							<p class='result'>Hitachi EX22-2<br>$3,100</p>
+							<p class='result'>Hitachi EX25-2<br>$2,990</p>
+							<p class='result'>Hitachi EX27<br>$2,990</p>
+							<p class='result'>Hitachi EX30<br>$2,950</p>
+							<p class='result'>Hitachi EX33<br>$2,950</p>
+							<p class='result'>Hitachi EX35<br>$2,920</p>
+							<p class='result'>Hitachi EX45<br>$3,630</p>
+							<p class='result'>Hitachi EX60<br>$4,800</p>
+							<p class='result'>Hitachi EX8<br>$2,820</p>
+							<p class='result'>Hitachi FH22.2<br>$3,050</p>
+							<p class='result'>Hitachi ZX14<br>$2,850</p>
+							<p class='result'>Hitachi ZX27<br>$2,990</p>
+							<p class='result'>Hitachi ZX30<br>$2,950</p>
+							<p class='result'>Hitachi ZX33<br>$3,100</p>
+							<p class='result'>Hitachi ZX35<br>$2,920</p>
+							<p class='result'>Hitachi ZX38<br>$3,000</p>
+							<p class='result'>Hitachi ZX40<br>$3,000</p>
+							<p class='result'>Hitachi ZX50<br>$3,800</p>
+							<p class='result'>Hitachi ZX52<br>$3,850</p>
+						</ul>
+						<ul class="manufacturer" id="hyundai">
+							<p class='result'>Hyundai 220<br>$8,900</p>
+							<p class='result'>Hyundai 300<br>$14,500</p>
+							<p class='result'>Hyundai 305<br>$15,100</p>
+							<p class='result'>Hyundai 320<br>$15,100</p>
+							<p class='result'>Hyundai 320<br>$14,500</p>
+							<p class='result'>Hyundai 330<br>$15,100</p>
+							<p class='result'>Hyundai 330<br>$14,500</p>
+							<p class='result'>Hyundai R110<br>$6,500</p>
+							<p class='result'>Hyundai R130<br>$6,800</p>
+							<p class='result'>Hyundai R130<br>$8,200</p>
+							<p class='result'>Hyundai R15-7<br>$2,820</p>
+							<p class='result'>Hyundai R16-7<br>$2,820</p>
+							<p class='result'>Hyundai R160<br>$7,900</p>
+							<p class='result'>Hyundai R200<br>$8,800</p>
+							<p class='result'>Hyundai R210<br>$8,900</p>
+							<p class='result'>Hyundai R215<br>$8,800</p>
+							<p class='result'>Hyundai R22-7<br>$2,850</p>
+							<p class='result'>Hyundai R225<br>$8,890</p>
+							<p class='result'>Hyundai R250<br>$8,900</p>
+							<p class='result'>Hyundai R28-7<br>$2,920</p>
+							<p class='result'>Hyundai R305<br>$14,400</p>
+							<p class='result'>Hyundai R35-7<br>$3,300</p>
+							<p class='result'>Hyundai R55<br>$4,800</p>
+							<p class='result'>Hyundai R60<br>$4,800</p>
+							<p class='result'>Hyundai R75<br>$4,650</p>
+							<p class='result'>Hyundai R80<br>$4,600</p>
+						</ul>
+						<ul class="manufacturer" id="ihi">
+							<p class='result'>Ihi 10F, 10F-2<br>$2,200</p>
+							<p class='result'>Ihi 12JX<br>$2,850</p>
+							<p class='result'>Ihi 14NXT<br>$2,850</p>
+							<p class='result'>Ihi 15NX, 15J, 15VXT<br>$2,850</p>
+							<p class='result'>Ihi 16NX, 16VX<br>$2,950</p>
+							<p class='result'>Ihi 17J, 17JE, 17NE, 17VXE, 17VXT<br>$2,850</p>
+							<p class='result'>Ihi 18N, 18NX, 18NX2, 18NXT, 18J, 18UJ<br>$2,900</p>
+							<p class='result'>Ihi 19VXT<br>$2,950</p>
+							<p class='result'>Ihi 20NX, 20JX, 20VX<br>$2,800</p>
+							<p class='result'>Ihi 25JX<br>$3,400</p>
+							<p class='result'>Ihi 25NX, 25VX<br>$2,920</p>
+							<p class='result'>Ihi 28N, 28N2, 28J<br>$3,350</p>
+							<p class='result'>Ihi 30F, 30F-2<br>$3,400</p>
+							<p class='result'>Ihi 30N, 30N2, 30VX<br>$2,920</p>
+							<p class='result'>Ihi 35F, 35F2, 35J<br>$3,300</p>
+							<p class='result'>Ihi 35N, 35NX, 35VX<br>$3,450</p>
+							<p class='result'>Ihi 40J, 40JX<br>$3,560</p>
+							<p class='result'>Ihi 45J, 45J2<br>$3,650</p>
+							<p class='result'>Ihi 50F, 50F-2<br>$3,400</p>
+							<p class='result'>Ihi 50VX<br>$3,600</p>
+						</ul>
+						<ul class="manufacturer" id="kobelco">
+							<p class='result'>Kobelco SK015<br>$2,660</p>
+							<p class='result'>Kobelco SK024<br>$3,200</p>
+							<p class='result'>Kobelco SK025<br>$2,920</p>
+							<p class='result'>Kobelco SK032<br>$3,350</p>
+							<p class='result'>Kobelco SK035<br>$3,350</p>
+							<p class='result'>Kobelco SK08<br>$2,660</p>
+							<p class='result'>Kobelco SK100<br>$5,900</p>
+							<p class='result'>Kobelco SK10SR<br>$2,660</p>
+							<p class='result'>Kobelco SK115SR<br>$5,900</p>
+							<p class='result'>Kobelco SK120<br>$5,900</p>
+							<p class='result'>Kobelco SK130<br>$6,600</p>
+							<p class='result'>Kobelco SK135SR<br>$6,900</p>
+							<p class='result'>Kobelco SK13SR<br>$2,660</p>
+							<p class='result'>Kobelco SK140<br>$6,400</p>
+							<p class='result'>Kobelco SK150<br>$9,200</p>
+							<p class='result'>Kobelco SK160<br>$9,200</p>
+							<p class='result'>Kobelco SK17<br>$2,950</p>
+							<p class='result'>Kobelco SK18<br>$2,950</p>
+							<p class='result'>Kobelco SK20<br>$2,950</p>
+							<p class='result'>Kobelco SK210<br>$9,980</p>
+							<p class='result'>Kobelco SK22<br>$2,950</p>
+							<p class='result'>Kobelco SK220<br>$8,900</p>
+							<p class='result'>Kobelco SK230<br>$13,650</p>
+							<p class='result'>Kobelco SK235<br>$13,650</p>
+							<p class='result'>Kobelco SK25SR<br>$2,950</p>
+							<p class='result'>Kobelco SK27SR<br>$2,950</p>
+							<p class='result'>Kobelco SK300<br>$14,590</p>
+							<p class='result'>Kobelco SK30SR<br>$3,250</p>
+							<p class='result'>Kobelco SK330<br>$14,590</p>
+							<p class='result'>Kobelco SK350<br>$16,400</p>
+							<p class='result'>Kobelco SK35SR<br>$3,300</p>
+							<p class='result'>Kobelco SK45<br>$3,450</p>
+							<p class='result'>Kobelco SK50UR<br>$3,600</p>
+							<p class='result'>Kobelco SK55SR<br>$3,600</p>
+							<p class='result'>Kobelco SK60-1, SK60-2, SK60-4, SK60-5, SK60-6<br>$4,350</p>
+							<p class='result'>Kobelco SK60UR<br>$4,400</p>
+							<p class='result'>Kobelco SK70SR<br>$4,450</p>
+							<p class='result'>Kobelco SK80CS<br>$4,420</p>
+							<p class='result'>Kobelco SK80MSR<br>$4,460</p>
+						</ul>
+						<ul class="manufacturer" id="komatsu">
+							<p class='result'>Komatsu PC05<br>$2,550</p>
+							<p class='result'>Komatsu PC07<br>$2,550</p>
+							<p class='result'>Komatsu PC10<br>$2,920</p>
+							<p class='result'>Komatsu PC100<br>$5,600</p>
+							<p class='result'>Komatsu PC110<br>$5,800</p>
+							<p class='result'>Komatsu PC120<br>$5,800</p>
+							<p class='result'>Komatsu PC128UU<br>$5,800</p>
+							<p class='result'>Komatsu PC12R<br>$2,550</p>
+							<p class='result'>Komatsu PC12UU<br>$2,920</p>
+							<p class='result'>Komatsu PC130<br>$5,800</p>
+							<p class='result'>Komatsu PC138<br>$6,900</p>
+							<p class='result'>Komatsu PC14R<br>$2,550</p>
+							<p class='result'>Komatsu PC15<br>$2,920</p>
+							<p class='result'>Komatsu PC150<br>$6,950</p>
+							<p class='result'>Komatsu PC15R<br>$2,550</p>
+							<p class='result'>Komatsu PC16R<br>$2,550</p>
+							<p class='result'>Komatsu PC18MR<br>$2,550</p>
+							<p class='result'>Komatsu PC20-6<br>$3,200</p>
+							<p class='result'>Komatsu PC200<br>$7,600</p>
+							<p class='result'>Komatsu PC20MR<br>$2,800</p>
+							<p class='result'>Komatsu PC20R<br>$2,920</p>
+							<p class='result'>Komatsu PC22MR<br>$2,850</p>
+							<p class='result'>Komatsu PC25R<br>$2,920</p>
+							<p class='result'>Komatsu PC26MR<br>$2,920</p>
+							<p class='result'>Komatsu PC27R, PC27MR<br>$2,920</p>
+							<p class='result'>Komatsu PC28<br>$2,920</p>
+							<p class='result'>Komatsu PC30-3, PC30-5, PC30-6, PC30-7, PC30-8<br>$3,200</p>
+							<p class='result'>Komatsu PC30MR, PC30UU<br>$3,050</p>
+							<p class='result'>Komatsu PC35MR<br>$3,050</p>
+							<p class='result'>Komatsu PC40FR<br>$3,100</p>
+							<p class='result'>Komatsu PC40R-8<br>$3,600</p>
+							<p class='result'>Komatsu PC45<br>$3,600</p>
+							<p class='result'>Komatsu PC50<br>$3,450</p>
+							<p class='result'>Komatsu PC50UU<br>$3,600</p>
+							<p class='result'>Komatsu PC55<br>$3,800</p>
+							<p class='result'>Komatsu PC70FR<br>$3,800</p>
+							<p class='result'>Komatsu PC75UU<br>$4,600</p>
+							<p class='result'>Komatsu PC80<br>$4,800</p>
+							<p class='result'>Komatsu PC88<br>$4,800</p>
+							<p class='result'>Komatsu SK030<br>$3,350</p>
+							<p class='result'>Komatsu SK16<br>$2,950</p>
+						</ul>
+						<ul class="manufacturer" id="kubota">
 
-					</ul>
-					<p class="modal-message">Can't find what you're looking for? Give us a call and let's sort something out.
+						</ul>
+						<ul class="manufacturer" id="newholland">
+
+						</ul>
+						<ul class="manufacturer" id="sumitomo">
+
+						</ul>
+						<ul class="manufacturer" id="sunward">
+
+						</ul>
+						<ul class="manufacturer" id="takeuchi">
+
+						</ul>
+						<ul class="manufacturer" id="volvo">
+
+						</ul>
+						<ul class="manufacturer" id="wackerneuson">
+
+						</ul>
+						<ul class="manufacturer" id="yanmar">
+
+						</ul>
+					</div>
+					<p class="modal-message">Can't find what you're looking for? Give us a call and we'll see what we can do.
                 </div>
             </div>
         </div>
 
-		<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js"></script> -->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+		<div class="modal fade" id="modal-FAQ" tabindex="-1">
+            <div class="modal-dialog">
+				<div class="modal-section">
+					<p class="modal-title">Frequently asked questions</p>
+					<div class="scrollable">
+						<p class="faq-header">Should I buy one drive or two?</p>
+						<p class="faq-body">
+							While you can mix old and new drives, we recommend you buy two, especially if you use your excavator frequently. Buying two new drives guarantees equal performance and straight driving.
+						</p>
+						<p class="faq-header">If I connect the hoses to the drive incorrectly, will I damage it?</p>
+						<p class="faq-body">
+							YES! Typically you will have four hoses connecting each drive to your excavator (unless it’s a 1-speed machine, in which case you will have three). The two larger hoses are your Forward and Reverse. A smaller hose will be your 2-speed connection, and there will also be a case drain hose (oil return).
+							<br><br>
+							Typically the case drain hose can be connected to an upper or lower port on the drive depending on which side the drive is being installed. We provide a connection diagram in the box with each drive we sell.
+							<br><br>
+							If you connect the hoses wrong you risk instantly destroying the drive when it’s put under load.
+						</p>
+						<p class="faq-header">Is it cheaper to rebuild a drive or buy a new one from you?</p>
+						<p class="faq-body">
+							The cost of new aftermarket final drives has reduced significantly in recent years, thanks to high-volume production systems and improved tooling technology. That being said, there are times when rebuilding drives is the more practical option, especially if your machine has an unusual drive.
+							<br><br>
+							Also note that not all new drives are the same. That's why we provide a 2-year unlimited hour warranty for all of our drives. You won’t get that with a rebuilt drive!
+						</p>
+						<p class="faq-header">What oil does the drive use and how often should I replace it?</p>
+						<p class="faq-body">
+							Use gear oil SAE80/90W, and change it every 250 hours. The 1 litre and 2.5 litre packs have pull out snorkels making it easy to pour into your drive and are readily available from Repco and Supercheap Auto. A 1 litre pack will be enough for most drives up to 5-6 tonnes.
+						</p>
+						<p class="faq-header">What is the typical freight cost for one of your drives?</p>
+						<p class="faq-body">
+							Our drives vary considerably in size and weight, from under 20 kg to over 500 kg, so the cost will vary accordingly. All drives are pre-packed in a forklift pallet. You can pick up from us directly and we can load into your vehicle, or we can provide a competitive freight quote to your address.
+						</p>
+					</div>
+                </div>
+            </div>
+        </div>
 
+		<script src="scripts/bootstrap.bundle.min.js"></script>
+		<script src="scripts/jquery-3.7.1.min.js"></script>
 		<script src="scripts/main.js"></script>
 
     </body>

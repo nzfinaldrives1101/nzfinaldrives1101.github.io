@@ -30,7 +30,7 @@
 
 .modal {
 	overflow-x: scroll;
-	transition: opacity 0.25s;
+	transition: opacity 0.2s;
 	background-color: #080808d0;
 	position: fixed;
 	top: 0;
@@ -56,20 +56,14 @@
 	padding: 10px;
 	margin-top: calc(50vh - 350px);
 	margin-left: calc(50vw - 300px);
-	transform: scale(1.3);
-	transition: all 0.25s, margin 0s, width 0s, height 0s, padding 0s;
+	transform: scale(1.2);
+	transition: all 0.2s, margin 0s, width 0s, height 0s, padding 0s;
 	transition-timing-function: linear;
 }
 
 
 
 
-
-.modal-close {
-	width: 100%;
-	height: 2rem;
-	background-color: #202020;
-}
 
 .modal-title {
     font-family: var(--semibold);
@@ -96,9 +90,9 @@ select {
 #search {
 	background-color: #202020;
 	color: #eeab4c;
-	width: 220px;
+	width: 100%;
 	height: 40px;
-	margin-bottom: 4px;
+	margin-bottom: 2px;
 	margin-left: auto;
 	font-size: 15px;
 	padding-left: 8px;
@@ -110,7 +104,8 @@ select {
 	background-color: #202020;
 	overflow-y: scroll;
 	height: 100%;
-	border-radius: 0.5rem 0 0.5rem 0.5rem;
+	padding-bottom: 18px;
+	border-radius: 0 0 0.5rem 0.5rem;
 }
 
 .modal-message {
@@ -119,40 +114,52 @@ select {
 	color: #ffffffa0;
 }
 
+.manufacturer {
+	background-color: #202020;
+	position: relative;
+	z-index: 10;
+}
+
 .result {
-	display: flex;
-	padding: 12px;
+	padding-top: 18px;
+	padding-left: 18px;
+	padding-right: 18px;
+	line-height: 1.3;
 	overflow: hidden;
 }
 
-.result-image {
-	width: 70px;
-	height: 70px;
-	margin-right: 1rem;
-}
-
-.result-text {
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-}
-
-.result-manufacturer {
+.result-none {
 	color: #ffffffa0;
-	line-height: 1.3;
+	position: absolute;
+	padding-top: 18px;
+	padding-left: 18px;
 }
 
-.result-model {
-	font-size: 1.3rem;
-	line-height: 1.3;
+
+
+.scrollable {
+	padding: 18px;
+	background-color: #202020;
+	border-radius: 0.5rem;
+	overflow-y: scroll;
+	height: auto;
+}
+
+.faq-header {
 	font-family: var(--semibold);
+	margin-bottom: 0.5rem;
 }
 
-.result-cost {
-	display: flex;
-	margin-left: auto;
-	margin-top: auto;
-	margin-bottom: auto;
+.faq-body {
+	color: #ffffffa0;
+	margin-bottom: 2rem;
+}
+
+
+
+
+.hidden {
+	display: none;
 }
 
 
